@@ -25,7 +25,7 @@ void max(int arr[N][N],int k)
     if (arr[k][i] > maxm)
     maxm = arr[k][i];
     }
-    printf("Maximum value in row %d = %d\n" , k,maxm);
+    printf("%d. Satier Maksimum:%d\n" , k,maxm);
 
 }
 // Minmum
@@ -38,7 +38,7 @@ void min(int arr[N][N],int k)
     if (arr[k][i] < minum)
     minum = arr[k][i];
     }
-    printf("Minum value in row %d = %d\n" , k,minum);
+    printf("%d. Satier Minimum:%d\n" , k,minum);
 
 }
 
@@ -51,7 +51,7 @@ void avg(int arr[N][N],int k)
     for (int i = 0; i < N; i++) {
        avgm +=arr[k][i];
     }
-    printf("Avg value in row %d = %f\n" , k,avgm / N *1.0);
+    printf("%d. Satier Ortalama:%f0.2\n" , k,avgm / N);
 }
 
 
