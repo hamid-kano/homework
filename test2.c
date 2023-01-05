@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-int main(void)
-{
+
+void declare_array(){
    int sz;
    printf("Enter the size of array:");
    scanf("%d",&sz);
@@ -12,8 +12,7 @@ int main(void)
       {
       randArray[i][j]=rand()%20;
       }
-   }
-   //Generate number between 0 to 99
+   }//Generate number between 0 to 99
    printf("\nElements of the array:");
    printf("\n");
    for(i=0;i<sz;i++)
@@ -24,5 +23,10 @@ int main(void)
        }
          printf("\n");
    }
+}
+
+int main(void)
+{
+   declare_array();
    return 0;
 }
